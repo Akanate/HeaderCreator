@@ -1,4 +1,4 @@
-.Border--container {
+.Header--container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,6 +6,6 @@
 
 }
 
-.Border {
+.Header {
     position: absolute;
 }
