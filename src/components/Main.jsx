@@ -13,6 +13,7 @@ export default function Main() {
         borderWidth: "5px",
         borderColor: "#ffffff",
         backgroundColor: "#aabbcc",
+        borderRadius: "0px",
         width: "500px",
         height: "100px"
     }) 
@@ -56,12 +57,21 @@ export default function Main() {
             </select>
             </div>
             <div className="BorderRange--container">
-                Border-width<input type="range" defaultValue="0" min="0" max="20" onChange={e => setStyles(prevStyle => {
+                Border-width<input type="range" defaultValue="0" min="0" max="20" step="0.1" onChange={e => setStyles(prevStyle => {
                     return {
                         ...prevStyle,
                         borderWidth: `${e.target.value}px`
                     }
                 })}></input>
+            </div>
+
+            <div className="BorderRadius--container">
+                Border-radius <input type="range" defaultValue="0" min="0" max="25" onChange={e => setStyles(prevStyle => {
+                    return {
+                        ...prevStyle,
+                        borderRadius: `${e.target.value}px`
+                    }
+                })}></input>    
             </div>
             <div className="BorderColorPicker--container">
                 Border Color:<HexColorPicker color={styles.borderColor} onChange={e => setStyles(prevStyle => {
@@ -83,6 +93,7 @@ export default function Main() {
                 borderWidth: styles.borderWidth,
                 borderColor: styles.borderColor,
                 backgroundColor: styles.backgroundColor,
+                borderRadius: styles.borderRadius,
                 width: styles.width,
                 height: styles.height
             }}/>
@@ -109,6 +120,7 @@ export default function Main() {
                         <p>border-width: {styles.borderWidth}</p>
                         <p>border-color: {styles.borderColor}</p>
                         <p>background-color: {styles.backgroundColor}</p>
+                        <p>border-radius: {styles.borderRadius}</p>
                         <p>{"}"}</p>
                 </div>
                 <div className="HTML HTML-edge" >

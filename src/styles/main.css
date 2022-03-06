@@ -4,7 +4,7 @@ body {
     font-weight: 300;
 }
 
-.BorderStyle--container, .BoxShadow, .BorderRange--container{
+.BorderStyle--container, .BoxShadow, .BorderRange--container, .BorderRadius--container{
     display: flex;
     flex-direction: row;
     padding: 20px;
@@ -70,7 +70,7 @@ body {
     border-color: #8e8888;
     border-radius: 10px;
     margin-left: 15px;
-    margin-top: -530px;
+    margin-top: -560px;
     height: 150px;
     border-width: 5px;
 }
