@@ -1,0 +1,52 @@
+.BorderStyle--container, .BoxShadow, .BorderRange--container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 100px;
+    gap: 20px;
+}
+
+.BorderColorPicker--container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    padding-left: 0;
+    margin-top: -200px;
+    padding: 20px;
+    width: 300px;
+    gap: 20px;
+}
+
+.BackgroundColorPicker--container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-left: auto;
+    padding: 20px;
+    width: 300px;
+}
+
+.BoxShadowColor--container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-left: auto;
+    padding: 20px;
+    width: 300px;
+}
+
+.Border {
+    display: flex;
+    position: absolute;
+    left: 600px;
+    top: 300px;
+}
+
+.CSS {
+    width: 200px;
+    border-style: ridge;
+    border-color: lightgrey;
+    margin-left: 15px;
+    margin-top: -420px;
+}
+
