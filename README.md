@@ -12,5 +12,5 @@
 - Change HTML/CSS class names.
 
 ### Why I built this
-- It allows users to be able to easily change there header to whatever styling they want.
+- It allows users to be able to easily change there header to whatever styling they want without having to do any of the css or html yourself.
 
