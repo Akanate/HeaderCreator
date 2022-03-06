@@ -2,8 +2,8 @@ import "../styles/container.css"
 
 export default function Container (props) {
     return (
-        <div className="Header--container">
-            <div className="Header" style={props.applyStyles}></div>
+        <div className="HeaderContainer--container">
+            <div className="HeaderContainer" style={props.applyStyles}></div>
         </div>
     )
 }
