@@ -1,6 +1,7 @@
 import "../styles/main.css"
 import React, { useState, useEffect } from "react"
 import { HexColorPicker } from 'react-colorful';
+import Container from "./Container"
 
 export default function Main() {
     const [boxShadowColor, setBoxShadowColor] = useState('#aabbcc')
@@ -27,7 +28,7 @@ export default function Main() {
     return (
         <>  
             <div className="BoxShadow">
-            Box Shadow: <input type="range" defaultValue="0" min="0" max="11" step="0.01" onChange={e => setStyles(prevStyle => {
+            Box Shadow: <input type="range" defaultValue="0" min="0" max="30" step="0.01" onChange={e => setStyles(prevStyle => {
             return {
                 ...prevStyle,
                 boxShadow: `${e.target.value}px ${e.target.value}px ${e.target.value}px ${e.target.value}px`
@@ -70,6 +71,16 @@ export default function Main() {
                 })}/>
             </div>
 
+            <Container applyStyles={{
+                boxShadow: `${styles.boxShadow} ${styles.shadowColor}`,
+                borderStyle: styles.borderStyle,
+                borderWidth: styles.borderWidth,
+                borderColor: styles.borderColor,
+                backgroundColor: styles.backgroundColor,
+                width: styles.width,
+                height: styles.height
+            }}/>
+            
             <div className="BackgroundColorPicker--container">
                 Background Color:<HexColorPicker color={styles.backgroundColor} onChange={e => setStyles(prevStyle => {
                     return {
@@ -81,18 +92,6 @@ export default function Main() {
 
             <div className="BoxShadowColor--container">
                 Box Shadow Color:<HexColorPicker color={styles.boxShadow} onChange={setBoxShadowColor}/>  
-            </div>
-            
-            <div className="Border" style={{
-                boxShadow: `${styles.boxShadow} ${styles.shadowColor}`,
-                borderStyle: styles.borderStyle,
-                borderWidth: styles.borderWidth,
-                borderColor: styles.borderColor,
-                backgroundColor: styles.backgroundColor,
-                width: styles.width,
-                height: styles.height
-            }}>
-                Header Preview
             </div>
             <div className="CSS">
                 CSS
