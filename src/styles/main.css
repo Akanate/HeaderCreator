@@ -23,6 +23,7 @@ body {
     margin-bottom: 15px;
 }
 
+
 .BorderColorPicker--container {
     display: flex;
     flex-direction: row;
@@ -55,19 +56,23 @@ body {
 
 .CSS {
     width: 200px;
-    border-style: ridge;
-    border-color: grey;
+    border-style: solid;
+    border-color: #8e8888;
     margin-left: 15px;
     margin-top: -450px;
+    border-radius: 10px;
+    border-width: 5px;
 }
 
 .HTML {
     width: 200px;
-    border-style: ridge;
-    border-color: grey;
+    border-style: solid;
+    border-color: #8e8888;
+    border-radius: 10px;
     margin-left: 15px;
     margin-top: -530px;
     height: 150px;
+    border-width: 5px;
 }
 
 .CSS-HTML {
