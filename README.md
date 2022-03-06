@@ -2,7 +2,7 @@
 - This project was made to help with header customisation for people who are not very good with css styling.
 
 ## Current features
-- Increase box shadow
+- Increase box shadow of header
 - Change box shadow color
 - Change background color
 - Increase/Decrease border size
