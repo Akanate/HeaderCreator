@@ -5,6 +5,7 @@ import Container from "./Container"
 
 export default function Main() {
     const [boxShadowColor, setBoxShadowColor] = useState('#aabbcc')
+    const [htmlclass, setHtmlClass] = useState("")
     const [styles, setStyles] = useState({
         boxShadow: "1px 1px 1px 1px",
         shadowColor: "#aaaaa",
@@ -71,6 +72,11 @@ export default function Main() {
                 })}/>
             </div>
 
+            <div className="classInput--container">
+                <span>HTML class Name</span>
+                <input className="classInput" onChange={e => setHtmlClass(e.target.value)}></input>    
+            </div>
+
             <Container applyStyles={{
                 boxShadow: `${styles.boxShadow} ${styles.shadowColor}`,
                 borderStyle: styles.borderStyle,
@@ -93,14 +99,24 @@ export default function Main() {
             <div className="BoxShadowColor--container">
                 Box Shadow Color:<HexColorPicker color={styles.boxShadow} onChange={setBoxShadowColor}/>  
             </div>
-            <div className="CSS">
-                CSS
-                <hr />
-                <p>box-shadow: {styles.boxShadow} {styles.shadowColor}</p>
-                <p>border-style: {styles.borderStyle}</p>
-                <p>border-width: {styles.borderWidth}</p>
-                <p>border-color: {styles.borderColor}</p>
-                <p>background-color: {styles.backgroundColor}</p>
+            <div className="CSS-HTML">
+                <div className="CSS">
+                    CSS
+                    <hr />
+                    <p>{`.${htmlclass === "" ? "default": htmlclass} {`}</p>
+                        <p>box-shadow: {styles.boxShadow} {styles.shadowColor}</p>
+                        <p>border-style: {styles.borderStyle}</p>
+                        <p>border-width: {styles.borderWidth}</p>
+                        <p>border-color: {styles.borderColor}</p>
+                        <p>background-color: {styles.backgroundColor}</p>
+                        <p>{"}"}</p>
+                </div>
+                <div className="HTML">
+                    HTML
+                   <hr /> 
+                   <p>{`<header class="${htmlclass === "" ? "default": htmlclass}"</header>`}</p>
+                </div>
+                
             </div>
         </>
         
