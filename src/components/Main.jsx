@@ -111,7 +111,7 @@ export default function Main() {
                         <p>background-color: {styles.backgroundColor}</p>
                         <p>{"}"}</p>
                 </div>
-                <div className="HTML">
+                <div className="HTML HTML-edge" >
                     HTML
                    <hr /> 
                    <p>{`<header class="${htmlclass === "" ? "default": htmlclass}"</header>`}</p>
