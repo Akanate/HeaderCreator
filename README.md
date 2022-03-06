@@ -6,6 +6,7 @@
 - Change box shadow color
 - Change background color
 - Increase/Decrease border size
+- Increase/Decrease border radius
 - Change border color
 - Generates HTML/CSS 
 - Change HTML/CSS class names.
