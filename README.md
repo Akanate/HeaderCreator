@@ -13,8 +13,3 @@
 ### Why I built this
 - It allows users to be able to easily change there header to whatever styling they want.
 
-#### Updates which will be coming
-- Text inside of header.
-- Changing font size of text.
-- Changing font color of text.
-- Changing positioning of text.
