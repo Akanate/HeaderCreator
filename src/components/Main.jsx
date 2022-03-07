@@ -115,12 +115,12 @@ export default function Main() {
                     CSS
                     <hr />
                     <p>{`.${htmlclass === "" ? "default": htmlclass} {`}</p>
-                        {styles.boxShadow === "0px 0px 0px 0px" ? "": <p>box-shadow: {styles.boxShadow} {styles.shadowColor}</p>}
-                        {styles.borderStyle === "none" ? "": <p>border-style: {styles.borderStyle}</p>}
-                        {styles.borderWidth === "0px" ? "": <p>border-width: {styles.borderWidth}</p>}
-                        {styles.borderColor === "" ? "": <p>border-color: {styles.borderColor}</p>}
-                        {styles.backgroundColor === "" ? "": <p>background-color: {styles.backgroundColor}</p>}
-                        {styles.borderRadius === "0px"  ? "": <p>border-radius: {styles.borderRadius}</p>}
+                        {styles.boxShadow === "0px 0px 0px 0px" ? "": <p>box-shadow: {styles.boxShadow} {styles.shadowColor};</p>}
+                        {styles.borderStyle === "none" ? "": <p>border-style: {styles.borderStyle};</p>}
+                        {styles.borderWidth === "0px" ? "": <p>border-width: {styles.borderWidth};</p>}
+                        {styles.borderColor === "" ? "": <p>border-color: {styles.borderColor};</p>}
+                        {styles.backgroundColor === "" ? "": <p>background-color: {styles.backgroundColor};</p>}
+                        {styles.borderRadius === "0px"  ? "": <p>border-radius: {styles.borderRadius};</p>}
                         <p>{"}"}</p>
                 </div>
                 <div className="HTML HTML-edge" >
