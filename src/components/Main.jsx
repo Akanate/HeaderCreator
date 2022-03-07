@@ -30,7 +30,7 @@ export default function Main() {
     return (
         <>  
             <div className="BoxShadow">
-            Box Shadow: <input type="range" defaultValue="0" min="0" max="30" step="0.01" onChange={e => setStyles(prevStyle => {
+            Box Shadow: <input className="BoxShadow--input" type="range" defaultValue="0" min="0" max="30" step="0.01" onChange={e => setStyles(prevStyle => {
             return {
                 ...prevStyle,
                 boxShadow: `${e.target.value}px ${e.target.value}px ${e.target.value}px ${e.target.value}px`
@@ -99,7 +99,7 @@ export default function Main() {
             }}/>
             
             <div className="BackgroundColorPicker--container">
-                Background Color:<HexColorPicker color={styles.backgroundColor} onChange={e => setStyles(prevStyle => {
+                <p className="BackgroundColor--text">Background Color:</p><HexColorPicker color={styles.backgroundColor} onChange={e => setStyles(prevStyle => {
                     return {
                         ...prevStyle,
                         backgroundColor: e

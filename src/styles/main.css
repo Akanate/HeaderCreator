@@ -24,6 +24,10 @@ body {
  
     }
 
+    .BoxShadow--input {
+        width: 110px !important;
+    }
+
     .CSS, .HTML {
         width: 22% !important;
         height: 130px !important;
@@ -43,6 +47,9 @@ body {
         margin-top: 50px;
     }
     
+    .classInput {
+        width: 70px;
+    }
 
 }
 
