@@ -16,7 +16,7 @@ body {
 
     .HeaderContainer {
         width: 50% !important;
-        bottom: 200px;
+        bottom: 180px !important;
         left: 20px;
     }
 }
