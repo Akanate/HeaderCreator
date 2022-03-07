@@ -59,7 +59,9 @@ body {
     border-style: solid;
     border-color: #8e8888;
     margin-left: 15px;
-    margin-top: -450px;
+    margin-top: -400px;
+    height: 180px;
+    overflow-y: scroll;
     border-radius: 10px;
     border-width: 5px;
 }
@@ -70,7 +72,7 @@ body {
     border-color: #8e8888;
     border-radius: 10px;
     margin-left: 15px;
-    margin-top: -560px;
+    margin-top: -360px;
     height: 150px;
     border-width: 5px;
 }

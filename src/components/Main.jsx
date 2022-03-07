@@ -7,11 +7,11 @@ export default function Main() {
     const [boxShadowColor, setBoxShadowColor] = useState('#aabbcc')
     const [htmlclass, setHtmlClass] = useState("")
     const [styles, setStyles] = useState({
-        boxShadow: "1px 1px 1px 1px",
-        shadowColor: "#aaaaa",
-        borderStyle: "None",
-        borderWidth: "5px",
-        borderColor: "#ffffff",
+        boxShadow: "0px 0px 0px 0px",
+        shadowColor: "",
+        borderStyle: "none",
+        borderWidth: "0px",
+        borderColor: "",
         backgroundColor: "#aabbcc",
         borderRadius: "0px",
         width: "500px",
@@ -115,12 +115,12 @@ export default function Main() {
                     CSS
                     <hr />
                     <p>{`.${htmlclass === "" ? "default": htmlclass} {`}</p>
-                        <p>box-shadow: {styles.boxShadow} {styles.shadowColor}</p>
-                        <p>border-style: {styles.borderStyle}</p>
-                        <p>border-width: {styles.borderWidth}</p>
-                        <p>border-color: {styles.borderColor}</p>
-                        <p>background-color: {styles.backgroundColor}</p>
-                        <p>border-radius: {styles.borderRadius}</p>
+                        {styles.boxShadow === "0px 0px 0px 0px" ? "": <p>box-shadow: {styles.boxShadow} {styles.shadowColor}</p>}
+                        {styles.borderStyle === "none" ? "": <p>border-style: {styles.borderStyle}</p>}
+                        {styles.borderWidth === "0px" ? "": <p>border-width: {styles.borderWidth}</p>}
+                        {styles.borderColor === "" ? "": <p>border-color: {styles.borderColor}</p>}
+                        {styles.backgroundColor === "" ? "": <p>background-color: {styles.backgroundColor}</p>}
+                        {styles.borderRadius === "0px"  ? "": <p>border-radius: {styles.borderRadius}</p>}
                         <p>{"}"}</p>
                 </div>
                 <div className="HTML HTML-edge" >
