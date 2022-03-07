@@ -10,6 +10,7 @@
 - Change border color
 - Generates HTML/CSS 
 - Change HTML/CSS class names.
+- Mobile Support
 
 ### Why I built this
 - It allows users to be able to easily change their header to whatever styling they want without having to do any of the css or html yourself.
