@@ -73,7 +73,7 @@ export default function Main() {
                     }
                 })}></input>    
             </div>
-            <div className="BorderColorPicker--container">
+            <div className="BorderColorPicker--container BorderColorPickerMobile--container">
                 Border Color:<HexColorPicker color={styles.borderColor} onChange={e => setStyles(prevStyle => {
                     return {
                         ...prevStyle,

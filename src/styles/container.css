@@ -4,6 +4,23 @@ body {
     font-weight: 300;
 }
 
+@media (max-width: 600px) {
+    .HeaderContainer--container {
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        width: 5% !important;
+        align-items: flex-start !important;
+        
+    }
+
+    .HeaderContainer {
+        width: 50% !important;
+        bottom: 200px;
+        left: 20px;
+    }
+}
+
 .HeaderContainer--container {
     display: flex;
     flex-direction: row;
